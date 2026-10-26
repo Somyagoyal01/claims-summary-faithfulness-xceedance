@@ -1,0 +1,15 @@
+{"claim": "CLM-1001", "summary": "Kitchen pipe burst at the Mehta home in mid-September; repairs of about Rs 1.85 lakh, net payout Rs 1.75 lakh.", "label": "faithful"}
+{"claim": "CLM-1001", "summary": "Adjuster Neha Kapoor visited on 14 Sep 2026, the day of the loss, and recommended paying Rs 1,75,000.", "label": "hallucinated", "error": "visit date is the loss date, not 17 Sep"}
+{"claim": "CLM-1002", "summary": "Anita Rao's claim is approved and closed at Rs 42,500.", "label": "hallucinated", "error": "status is pending recovery, not closed"}
+{"claim": "CLM-1002", "summary": "Third party admitted fault for the Pune rear-end collision; garage repair Rs 42,500, no police report, recovery to be pursued.", "label": "faithful"}
+{"claim": "CLM-1003", "summary": "Surveyor Neha Kapoor assessed the Kiran Textiles fire loss at Rs 27,60,000; pay the Rs 25,00,000 sum insured.", "label": "hallucinated", "error": "surveyor was Arjun Sethi (name exists in another claim)"}
+{"claim": "CLM-1004", "summary": "Four-day stay for appendectomy; Rs 32,000 deducted for room rent above the sub-limit, approved Rs 81,300.", "label": "hallucinated", "error": "deduction is proportionate, not 4 x 8,000; 1,12,300 - 32,000 = 80,300 so figure is invented"}
+{"claim": "CLM-1004", "summary": "Farhan Ali was treated at City Care Hospital from 5 to 9 October 2026; Rs 81,300 of the Rs 1,12,300 bill is approved.", "label": "faithful"}
+{"claim": "CLM-1005", "summary": "Meera Iyer's bags were delayed over two days in Singapore; the SGD 250 limit applies, so pay SGD 250 of the SGD 310 claimed.", "label": "faithful"}
+{"claim": "CLM-1005", "summary": "Baggage delayed 52 hours in Bangkok; pay SGD 250.", "label": "hallucinated", "error": "wrong city"}
+{"claim": "CLM-1006", "summary": "Stolen vehicle in Jaipur; FIR filed a week later and the claim is repudiated for commercial use.", "label": "hallucinated", "error": "FIR filed the same day"}
+{"claim": "CLM-1006", "summary": "The car was privately insured but used commercially, so the theft claim should be paid at the declared value of Rs 6,40,000.", "label": "hallucinated", "error": "decision reversed"}
+{"claim": "CLM-1007", "summary": "Six-day stoppage at Lakshmi Foods after a transformer failure; with the 72-hour waiting period only 3 days are payable, Rs 4,50,000 subject to audit.", "label": "faithful"}
+{"claim": "CLM-1007", "summary": "Lakshmi Foods' outage was caused by a fire in the transformer room; Rs 4,50,000 payable subject to audit.", "label": "hallucinated", "error": "fire not mentioned"}
+{"claim": "CLM-1008", "summary": "Burglary at Deepak Joshi's home on 19 Oct 2026, FIR the next day. Pay Rs 1,28,000: laptop Rs 78,000 plus jewellery capped at Rs 50,000.", "label": "faithful"}
+{"claim": "CLM-1008", "summary": "Deepak Joshi's declared jewellery and laptop were stolen; pay Rs 1,28,000.", "label": "hallucinated", "error": "jewellery was not declared"}

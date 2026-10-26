@@ -1,0 +1,16 @@
+{"claim": "CLM-1001", "summary": "Burst pipe damaged Ravi Mehta's kitchen on 14 Sep 2026. Repair estimated at Rs 1,85,000; after the Rs 10,000 deductible, Rs 1,75,000 is recommended.", "label": "faithful"}
+{"claim": "CLM-1001", "summary": "Burst pipe damaged Ravi Mehta's kitchen on 14 Sep 2026. Repair estimated at Rs 1,85,000; Rs 1,85,000 is recommended for payment.", "label": "hallucinated", "error": "wrong payable amount"}
+{"claim": "CLM-1002", "summary": "Anita Rao's car was rear-ended in Pune on 02 Oct 2026; repairs cost Rs 42,500 and recovery from the third-party insurer is pending.", "label": "faithful"}
+{"claim": "CLM-1002", "summary": "Anita Rao's car was rear-ended in Pune on 02 Oct 2026; a police report was filed and repairs cost Rs 42,500.", "label": "hallucinated", "error": "police report contradicted"}
+{"claim": "CLM-1003", "summary": "Fire at Kiran Textiles destroyed 340 bales on 21 Aug 2026. Loss Rs 27,60,000 exceeds the Rs 25,00,000 sum insured; pay Rs 25,00,000.", "label": "faithful"}
+{"claim": "CLM-1003", "summary": "Fire at Kiran Textiles destroyed 430 bales on 21 Aug 2026. Loss Rs 27,60,000; pay Rs 25,00,000.", "label": "hallucinated", "error": "bale count"}
+{"claim": "CLM-1004", "summary": "Farhan Ali had an appendectomy at City Care Hospital (05-09 Oct 2026). Bill Rs 1,12,300; approved Rs 81,300 after a room-rent proportionate deduction.", "label": "faithful"}
+{"claim": "CLM-1004", "summary": "Farhan Ali had an appendectomy at City Care Hospital. Bill Rs 1,12,300; approved in full.", "label": "hallucinated", "error": "approved in full contradicts deduction"}
+{"claim": "CLM-1005", "summary": "Meera Iyer's baggage was delayed 52 hours in Singapore; receipts SGD 310, policy limit SGD 250, so pay SGD 250.", "label": "faithful"}
+{"claim": "CLM-1005", "summary": "Meera Iyer's baggage was delayed 52 hours in Singapore; pay SGD 310 as per receipts.", "label": "hallucinated", "error": "payout above limit"}
+{"claim": "CLM-1006", "summary": "Sunil Verma's vehicle, valued at Rs 6,40,000, was stolen in Jaipur on 28 Sep 2026. Investigator Priya Nair found commercial use; repudiate.", "label": "faithful"}
+{"claim": "CLM-1006", "summary": "Sunil Verma's vehicle was stolen in Jaipur on 28 Sep 2026. Investigator Rahul Nair found commercial use; repudiate.", "label": "hallucinated", "error": "wrong investigator name"}
+{"claim": "CLM-1007", "summary": "Lakshmi Foods lost 6 days of production from 03 Oct 2026. After the 72-hour waiting period, Rs 4,50,000 is payable subject to audit.", "label": "faithful"}
+{"claim": "CLM-1007", "summary": "Lakshmi Foods lost 6 days of production from 03 Oct 2026; Rs 9,00,000 is payable.", "label": "hallucinated", "error": "ignores waiting period"}
+{"claim": "CLM-1008", "summary": "Deepak Joshi's home was burgled on 19 Oct 2026. Claimed Rs 2,30,000; undeclared jewellery capped at Rs 50,000 plus laptop Rs 78,000, so pay Rs 1,28,000.", "label": "faithful"}
+{"claim": "CLM-1008", "summary": "Deepak Joshi's home was burgled on 21 Oct 2026. Pay Rs 1,28,000.", "label": "hallucinated", "error": "wrong date"}
