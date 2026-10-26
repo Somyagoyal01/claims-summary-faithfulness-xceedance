@@ -1,0 +1,132 @@
+{
+  "dev": {
+    "n": 16,
+    "tp": 8,
+    "fp": 0,
+    "fn": 0,
+    "tn": 8,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "checks_fired": {
+      "payout_mismatch": 3,
+      "negation_conflict": 1,
+      "unsupported_number": 2,
+      "overstated_payment": 1,
+      "unsupported_name": 1,
+      "unsupported_date": 1
+    },
+    "errors": []
+  },
+  "templates": {
+    "mode": "offline extractive stand-in",
+    "mean_cross_template_agreement": 0.667,
+    "flag_rate_by_template": {
+      "zero_shot": 0.0,
+      "few_shot": 0.0,
+      "cot": 0.0,
+      "react": 0.0
+    },
+    "pii_leak_rate_by_template": {
+      "zero_shot": 0.0,
+      "few_shot": 0.0,
+      "cot": 0.0,
+      "react": 0.0
+    },
+    "agreement_by_claim": {
+      "CLM-1001": 0.667,
+      "CLM-1002": 0.667,
+      "CLM-1003": 0.667,
+      "CLM-1004": 0.667,
+      "CLM-1005": 0.667,
+      "CLM-1006": 0.667,
+      "CLM-1007": 0.667,
+      "CLM-1008": 0.667
+    }
+  },
+  "blind": {
+    "n": 15,
+    "tp": 5,
+    "fp": 4,
+    "fn": 4,
+    "tn": 2,
+    "precision": 0.556,
+    "recall": 0.556,
+    "f1": 0.556,
+    "checks_fired": {
+      "unsupported_number": 2,
+      "unsupported_name": 4,
+      "decision_mismatch": 2,
+      "payout_mismatch": 3
+    },
+    "errors": [
+      {
+        "claim": "CLM-1001",
+        "gold": "faithful",
+        "error": null,
+        "findings": [
+          "1.75 not in source",
+          "1.85 not in source",
+          "'September' not in source"
+        ],
+        "summary": "Kitchen pipe burst at the Mehta home in mid-September; repairs of about Rs 1.85 lakh, net payout Rs 1.75 lakh."
+      },
+      {
+        "claim": "CLM-1001",
+        "gold": "hallucinated",
+        "error": "visit date is the loss date, not 17 Sep",
+        "findings": [],
+        "summary": "Adjuster Neha Kapoor visited on 14 Sep 2026, the day of the loss, and recommended paying Rs 1,75,000."
+      },
+      {
+        "claim": "CLM-1004",
+        "gold": "faithful",
+        "error": null,
+        "findings": [
+          "'October' not in source",
+          "summary pays 112300, source recommends 81300"
+        ],
+        "summary": "Farhan Ali was treated at City Care Hospital from 5 to 9 October 2026; Rs 81,300 of the Rs 1,12,300 bill is approved."
+      },
+      {
+        "claim": "CLM-1005",
+        "gold": "faithful",
+        "error": null,
+        "findings": [
+          "summary pays 310, source recommends 250"
+        ],
+        "summary": "Meera Iyer's bags were delayed over two days in Singapore; the SGD 250 limit applies, so pay SGD 250 of the SGD 310 claimed."
+      },
+      {
+        "claim": "CLM-1006",
+        "gold": "hallucinated",
+        "error": "FIR filed the same day",
+        "findings": [],
+        "summary": "Stolen vehicle in Jaipur; FIR filed a week later and the claim is repudiated for commercial use."
+      },
+      {
+        "claim": "CLM-1007",
+        "gold": "hallucinated",
+        "error": "fire not mentioned",
+        "findings": [],
+        "summary": "Lakshmi Foods' outage was caused by a fire in the transformer room; Rs 4,50,000 payable subject to audit."
+      },
+      {
+        "claim": "CLM-1008",
+        "gold": "faithful",
+        "error": null,
+        "findings": [
+          "summary pays 50000, source recommends 128000"
+        ],
+        "summary": "Burglary at Deepak Joshi's home on 19 Oct 2026, FIR the next day. Pay Rs 1,28,000: laptop Rs 78,000 plus jewellery capped at Rs 50,000."
+      },
+      {
+        "claim": "CLM-1008",
+        "gold": "hallucinated",
+        "error": "jewellery was not declared",
+        "findings": [],
+        "summary": "Deepak Joshi's declared jewellery and laptop were stolen; pay Rs 1,28,000."
+      }
+    ]
+  }
+}

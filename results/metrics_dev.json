@@ -1,0 +1,47 @@
+{
+  "dev": {
+    "n": 16,
+    "tp": 8,
+    "fp": 0,
+    "fn": 0,
+    "tn": 8,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "checks_fired": {
+      "payout_mismatch": 3,
+      "negation_conflict": 1,
+      "unsupported_number": 2,
+      "overstated_payment": 1,
+      "unsupported_name": 1,
+      "unsupported_date": 1
+    },
+    "errors": []
+  },
+  "templates": {
+    "mode": "offline extractive stand-in",
+    "mean_cross_template_agreement": 0.667,
+    "flag_rate_by_template": {
+      "zero_shot": 0.0,
+      "few_shot": 0.0,
+      "cot": 0.0,
+      "react": 0.0
+    },
+    "pii_leak_rate_by_template": {
+      "zero_shot": 0.0,
+      "few_shot": 0.0,
+      "cot": 0.0,
+      "react": 0.0
+    },
+    "agreement_by_claim": {
+      "CLM-1001": 0.667,
+      "CLM-1002": 0.667,
+      "CLM-1003": 0.667,
+      "CLM-1004": 0.667,
+      "CLM-1005": 0.667,
+      "CLM-1006": 0.667,
+      "CLM-1007": 0.667,
+      "CLM-1008": 0.667
+    }
+  }
+}
